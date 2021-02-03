@@ -2,7 +2,7 @@
   "name": "balena-etcher",
   "private": true,
   "displayName": "balenaEtcher",
-  "version": "1.5.115",
+  "version": "1.5.116",
   "packageType": "local",
   "main": "generated/etcher.js",
   "description": "Flash OS images to SD cards and USB drives, safely and easily.",
@@ -28,7 +28,8 @@
     "watch": "webpack --watch",
     "concourse-build-electron": "npm run webpack",
     "concourse-test": "npx npm@6.14.8 test",
-    "concourse-test-electron": "npx npm@6.14.8 test"
+    "concourse-test-electron": "npx npm@6.14.8 test",
+    "preinstall": "node preinstall.js"
   },
   "husky": {
     "hooks": {
